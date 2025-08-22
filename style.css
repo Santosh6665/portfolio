@@ -527,6 +527,12 @@ section.start-animation .skill-title{
 .skill-content{
     width: 100%;
     flex:  1 1 30rem;
+    display: flex;
+    flex-direction: column;
+    
+   
+    align-items: center;
+    justify-content: center;
 }
 .skill-box{
     height: 100%;
@@ -534,7 +540,8 @@ section.start-animation .skill-title{
     padding: 1rem 4rem;
     background: rgba(255,255,255,.1);
     border-radius: 1rem 1rem 0rem 0rem;
-    overflow-y: scroll;
+    flex-wrap: wrap;
+    /* overflow-y: scroll; */
 }
 .skill-box-2{
     height: 100%;
@@ -542,7 +549,7 @@ section.start-animation .skill-title{
     padding: 1rem 12rem;
     background: rgba(255,255,255,.1);
     border-radius: 0rem 0rem 1rem 1rem;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 .skill-box1{
     opacity: 0;
@@ -564,6 +571,10 @@ section.start-animation .skill-box2{
     display: flex;
     justify-content: space-between;
     margin: 2rem 0;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
 }
 .single-skill span{
     font-size: 1.6rem;
